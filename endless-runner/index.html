@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Neon Runner - Endless Runner Game</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="game-container">
+        <canvas id="gameCanvas"></canvas>
+        
+        <!-- HUD -->
+        <div class="hud">
+            <div class="score-board">
+                <div class="distance-label">DISTANCE</div>
+                <div class="distance-value" id="distance">0</div>
+            </div>
+        </div>
+        
+        <!-- Game Over Screen -->
+        <div class="game-over-screen" id="gameOverScreen">
+            <div class="game-over-content">
+                <h1 class="game-over-title">GAME OVER</h1>
+                <div class="final-score">
+                    <div class="score-label">FINAL DISTANCE</div>
+                    <div class="score-value" id="finalScore">0</div>
+                </div>
+                <button class="restart-button" id="restartButton">RESTART GAME</button>
+            </div>
+        </div>
+        
+        <!-- Instructions -->
+        <div class="instructions" id="instructions">
+            <h2>NEON RUNNER</h2>
+            <p>SPACEBAR or CLICK to Jump</p>
+            <p>DOWN ARROW to Slide</p>
+            <p>Click to Start</p>
+        </div>
+    </div>
+    
+    <script src="script.js"></script>
+</body>
+</html>
